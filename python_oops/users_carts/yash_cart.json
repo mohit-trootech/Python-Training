@@ -1,0 +1,13 @@
+{
+    "Cart Owner": "yash Cart",
+    "Item Banana Details": {
+        "item_name": "Banana",
+        "item_price": 1.0,
+        "item_quantity": 2.0
+    },
+    "Item grapes Details": {
+        "item_name": "grapes",
+        "item_price": 42.0,
+        "item_quantity": 124.0
+    }
+}
