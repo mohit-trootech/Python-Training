@@ -1,6 +1,11 @@
 import json
 import os
 
+path = "{}/users_carts".format(os.getcwd())
+
+if not os.path.exists(path):
+    os.makedirs(path)
+
 
 class ShoppingCart:
     """Python Class to Implement Shopping Cart Logic - Add Items, Print Items, Delete Items, Total Price"""
@@ -8,10 +13,10 @@ class ShoppingCart:
     def __init__(self, customer_name):
         self.__name = name
         self.__shopping_dictionary = {}
-        self.__path = os.path.join(os.getcwd(), f"users_carts")
+        self.__path = os.path.join(path)
         if not ShoppingCart.load_data(self):
             self.__shopping_dictionary = {"Cart Owner": f"{customer_name} Cart"}
-        print(*self.__shopping_dictionary.values(), "Successfully Created")
+        print("Cart Successfully Created/Fetched")
 
     def add_items(self, item_name, item_price, item_quantity):
         self.__shopping_dictionary.setdefault(f"Item {item_name} Details",
@@ -47,8 +52,7 @@ class ShoppingCart:
     def load_data(self):
         try:
             with open(os.path.join(self.__path, f"{self.__name.lower()}_cart.json"), "r") as f:
-                x = f.read()
-                self.__shopping_dictionary = json.loads(x)
+                self.__shopping_dictionary = json.loads(f.read())
                 return True
         except FileNotFoundError:
             return False
