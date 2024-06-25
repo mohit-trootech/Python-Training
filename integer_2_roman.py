@@ -27,4 +27,4 @@ if __name__ == "__main__":
     try:
         print(integer_2_roman_numeral(sys.argv[1]))
     except:
-        print(integer_2_roman_numeral("1200"))
+        print(integer_2_roman_numeral("555"))

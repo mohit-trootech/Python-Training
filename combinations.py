@@ -15,4 +15,4 @@ def combination(n: int, r: int) -> int:
 
 
 if __name__ == "__main__":
-    print(combination(5, 4))
+    print(combination(52, 52))

@@ -12,4 +12,4 @@ def list_combination(lst: list) -> set:
 
 
 if __name__ == "__main__":
-    print(list_combination([1, 2, 153, 13, 61, 613, 163, 53]))
+    print(list_combination([1, 2, 3]))
