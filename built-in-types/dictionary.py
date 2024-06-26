@@ -54,6 +54,8 @@ try:
 except KeyError as e:
     print("Key Not Found", e)
 print(key_value_dict.dictionary)
+print("Name" in key_value_dict.dictionary)
+print("Age" in key_value_dict.dictionary)
 # dict_comprehension = MyDict()
 # dict_comprehension.dict_comprehension("i:i**3 for i in range(1, 20)")
 # type_constructor = MyDict()
