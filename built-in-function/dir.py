@@ -4,17 +4,21 @@ dir: function is used to return all the methods & properties present in that sco
 
 counter = 0
 
-
 print(globals().setdefault("name", "Mohit"))
 print(globals())
 
+
 def increment():
+    print("This DIR")
+    print(dir(increment))
     print(globals().get("name"))
     x = 5
-    print(dir())
     global counter
     counter += 1
-print(dir())
+
+
+print("This DIR")
+print(dir(increment))
 
 
 def decrement():
@@ -27,4 +31,3 @@ increment()
 print(counter)
 decrement()
 print(counter)
-

@@ -56,9 +56,26 @@ except KeyError as e:
 print(key_value_dict.dictionary)
 print("Name" in key_value_dict.dictionary)
 print("Age" in key_value_dict.dictionary)
+
+
 # dict_comprehension = MyDict()
 # dict_comprehension.dict_comprehension("i:i**3 for i in range(1, 20)")
 # type_constructor = MyDict()
 # type_constructor.type_constructor([1, 2, 3, 4], ["one", "two", "three", "four"])
 # print(dict_comprehension.dictionary)
 # print(type_constructor.dictionary)
+def print_dict_in_table(data: dict):
+    for i in data.keys():
+        print(i, end=" ")
+    print("")
+    i, j = data.values()
+    for value in zip(i, j):
+        print(*value, end="")
+
+
+my_dict = {
+    "Name": ["Mohit", "Yatish", "Yash", "Mohan", "Ram", "Bobby", "Monty", "Lata", "Shakti"],
+    "Age": [24, 26, 27, 25, 53, 43, 34, 53, 52]
+}
+print()
+print_dict_in_table(my_dict)
