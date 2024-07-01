@@ -2,6 +2,8 @@
  Method that perform the merge operation with two lists.
 """
 
+from Python_Learning.time_complexity import check_complexity
+
 
 def merge(left, right):
     result = []
@@ -40,15 +42,24 @@ def mergesort(l):
         right = mergesort(l[middle:])
 
         together = merge(left, right)
-        print('Merged ', together)
         return together
 
 
-"""
- Sample example of execution :
-"""
-numbers = [2, 0, 9, 6, 4, 3, 5, 8, 1, 7]
+@check_complexity
+def main():
+    """
+    Sample example of execution :
+    """
+    numbers = [2, 0, 9, 6, 4, 3, 5, 8, 1, 7]
 
-ordered = mergesort(numbers)
+    ordered = mergesort(numbers)
 
-print(ordered)
+    print(ordered)
+
+
+main()
+print(
+    "Average Time: {:.10f}".format(
+        sum([0.000069141 + 0.000077486 + 0.000066519 + 0.000066519 + 0.000063419]) / 5,
+    )
+)

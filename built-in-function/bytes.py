@@ -6,9 +6,9 @@ bytes[source, encoding, errors]
 print(bytes(5))
 print(bytes([1, 2, 3]))
 print(list(map(bytes, [1, 2, 3])))
-print(bytes("Hello This is bytes", 'utf-8'))
-print(bytes("Hello This is bytes", 'utf-16'))
-print(bytes("Hello This is bytes", 'utf-32'))
+print(bytes("Hello This is bytes", "utf-8"))
+print(bytes("Hello This is bytes", "utf-16"))
+print(bytes("Hello This is bytes", "utf-32"))
 
 x = bytes(5)
 print(f"x Before: {list(x)}")
@@ -21,7 +21,5 @@ print(f"x Before: {list(x)}")
 msg = b""
 data = b"Hello Hi Namaste"
 msg += bytes(data)
-msg.replace(b"hi", b"Mohit")
+msg.replace(b"Hi", b"Mohit")
 print(msg)
-
-

@@ -7,14 +7,16 @@ class Car:
     wheels = 4
 
     def __init__(self):
-        self.speed = '45'
+        self.speed = "45"
 
 
 c1 = Car()
 print(c1.wheels, c1.speed)
-delattr(c1, 'speed')  # equivalent -> del c1.speed
+delattr(c1, "speed")  # equivalent -> del c1.speed
 # print(c1.wheels, c1.speed)
-# delattr(c1, 'wheels')  # AttributeError
-delattr(Car, 'wheels')  # AttributeError
+# delattr(c1, "wheels")  # AttributeError
+# delattr(Car, "wheels")  # AttributeError
+setattr(Car, "wheels", 4)  # AttributeError
+delattr(Car, "wheels")  # AttributeError
+print(getattr(Car, "wheels", 5))
 # print(Car.wheels)  # AttributeError
-

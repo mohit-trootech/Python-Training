@@ -7,7 +7,7 @@ def binary_search(l, start, end, mid, find):
         binary_search(start, mid, (start + end) // 2, find)
     elif l[mid] < find:
         print(mid)
-        binary_search(mid, end, (start + end) // 2, find)
+        binary_search(start, mid, (start + end) // 2, find)
     elif l[mid] == find:
         return f"element found on Index {mid}"
 

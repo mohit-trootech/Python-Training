@@ -12,4 +12,8 @@ path = "/home/trootech/Mohit/Python_Learning/modules/os_module/File4"
 # print(os.stat("/home/trootech/Mohit/Python_Learning"))
 # print(os_name.get_pc_details())
 # print(dir(os))
-print(os.stat(file_path4))
+# print(os.stat(file_path4))
+# import pathlib
+#
+# pathlib.Path.touch("file")
+os.rmdir("newfile0")

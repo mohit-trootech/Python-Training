@@ -15,7 +15,7 @@ print(type(a), abs(a))
 print(type(b), abs(b))
 print(type(c), abs(c))
 print(type(d), abs(d))
-# print(type(e), abs(e)) #return error since e:str
+# print(type(e), abs(e)) #return NameError since e:str
 print(type(f), list(map(abs, f)))  #use a map for list
 
 

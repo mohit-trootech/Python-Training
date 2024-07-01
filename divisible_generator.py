@@ -13,3 +13,7 @@ def divisible_generator(divisor):
     else:
         print("Enter a Number Input")
 
+
+obj = divisible_generator(10)
+for i in obj:
+    print(i)

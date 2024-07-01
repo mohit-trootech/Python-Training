@@ -18,7 +18,6 @@ class ABC:
 
     @classmethod
     def class_method(cls):
-        print("Hello")
         print(cls.class_var)
 
     @staticmethod
@@ -34,4 +33,3 @@ ABC.class_method()
 obj.static_method()
 ABC.static_method()
 ABC().static_method()
-

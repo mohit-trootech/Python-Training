@@ -1,0 +1,5 @@
+root - 2024-07-01 12:13:52,788 - DEBUG - This is a debug message
+root - 2024-07-01 12:13:52,788 - INFO - This is an info message
+root - 2024-07-01 12:13:52,788 - WARNING - This is a warning message
+root - 2024-07-01 12:13:52,788 - CRITICAL - This is an Fatal message
+root - 2024-07-01 12:13:52,788 - Level 100 - This is Most critical error

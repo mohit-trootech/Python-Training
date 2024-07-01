@@ -1,7 +1,4 @@
 # Python Program to convert Integer Value to Roman
-import sys
-import constant
-from check_number_input import is_number
 
 
 symbols = constant.ROMAN_CONSTANTS

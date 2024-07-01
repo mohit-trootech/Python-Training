@@ -9,4 +9,11 @@ from constants import path, file_path3, file_path4
 # os.link(path + "File1", path + "File3")
 # os.rename(file_path3, path + "File1")
 
-os.rename("/home/trootech/Mohit/Python_Learning/modules/home", path)
+# os.rename(
+#     "/home/trootech/Mohit/Python/Python_Learning/modules/os_module/newfile0/newfile1",
+#     "/home/trootech/Mohit/Python/Python_Learning/modules/os_module/newfile1",
+# )
+os.rename(
+    "/home/trootech/Mohit/Python/Python_Learning/modules/os_module/os_rename.py",
+    "/home/trootech/Mohit/Python/Python_Learning/modules/os_module/os_renames.py ",
+)
