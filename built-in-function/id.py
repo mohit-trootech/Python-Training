@@ -1,7 +1,12 @@
 """
 id: returns the id of variables
 """
+
 from copy import deepcopy
+from getpass import getpass
+
+pwd = getpass("Enter Password: ")
+print(pwd)
 
 
 def main():
@@ -22,6 +27,5 @@ lst1 = [1, 2, 3, 4, 5]
 lst2 = lst1
 lst3 = deepcopy(lst1)
 
-print(id(lst1), id(lst2), id(lst3))
-print(globals())
-
+# print(id(lst1), id(lst2), id(lst3))
+# print(globals())

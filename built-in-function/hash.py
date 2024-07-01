@@ -1,6 +1,7 @@
 """
 hash: function to return has value of objects
 """
+
 from copy import deepcopy
 
 
@@ -15,18 +16,18 @@ class MyClass:
 
 obj = MyClass(5)
 print(obj.value)
-# h = obj.__hash__()
-# print(h)
+h = obj.__hash__()
+print(h)
 
-# a = "hi"
-# b = a
-# c = "hi"
-# print(hash(hash(a)))
-# print(hash(hash(b)))
-# print(hash(a))
-# print(hash(b))
-# print(hash(c))
-# print(hash("Hi"))
+a = "hi"
+b = a
+c = "hi"
+print(hash(hash(a)))
+print(hash(hash(b)))
+print(hash(a))
+print(hash(b))
+print(hash(c))
+print(hash("Hi"))
 
 
 list1 = [1, 2, 3, 4, 5]

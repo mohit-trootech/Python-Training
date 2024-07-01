@@ -1,7 +1,7 @@
 import os
 
 
-os.open("mohit.txt", os.O_CREAT)
-f = os.open("mohit.txt", os.O_RDONLY)
-
-print(dir(f))
+os.open("new", os.O_CREAT)
+f = os.open("new.txt", os.O_RDONLY)
+print(f)
+# print(dir(f))
