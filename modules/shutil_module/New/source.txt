@@ -1,3 +1,0 @@
-This is Source File
-Random Lines
-Shutil Module Files

@@ -1,4 +1,6 @@
-# Sample python code for the usage of pathlib module provided by the python
+"""
+Sample python code for the usage of pathlib module provided by the python
+"""
 
 import pathlib
 import sys

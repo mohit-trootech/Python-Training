@@ -1,1 +1,1 @@
-path = "/home/trootech/Mohit/Python_Learning/modules/shutil_module/"
+path = "/home/trootech/Mohit/"
