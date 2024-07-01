@@ -1,4 +1,6 @@
-# Sample python code for the usage of pathlib module provided by the python
+"""
+Sample python code for the usage of pathlib module provided by the python
+"""
 
 import pathlib
 import sys
@@ -89,7 +91,6 @@ def main():
             input_str = input()
             pathlib_object.check_file_present(input_str)
 
-            # on selecting the  fourth option the current working directory of the code is printed
         elif menu_choice == 4:
             pathlib_object.get_current_working_directory()
 
