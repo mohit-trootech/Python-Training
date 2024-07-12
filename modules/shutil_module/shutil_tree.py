@@ -1,6 +1,7 @@
 import shutil
 
-# shutil.copytree("NewDir", "diary")
+shutil.copytree("NewDir", "diary")
 
+# shutil.move("", "New1")
 
-shutil.rmtree("New")
+# shutil.rmtree("testdir", "NewDir")

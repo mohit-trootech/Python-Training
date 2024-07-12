@@ -6,10 +6,8 @@ RSA: Rivest, Shamir, Adleman, MD5: Message Digest 5 Algo
 FIPS: Federal Information Processing Standard, SHA: Secure Hash Algorithm
 """
 
-import binascii
-import json
-from hashlib import sha256
-
+import hashlib
+from hashlib import sha1, sha224, sha256, sha384, sha512
 
 # print(hashlib.algorithms_guaranteed)
 # print(hashlib.algorithms_available)
@@ -30,19 +28,6 @@ sha_1_old.digest()
 print(sha_1 == sha_1_old)
 # print(sha_1.block_size)
 # print(sha_1.digest_size)
-old = hash("1234")
-new = hash("1234")
-print(old, new)
+old = hash("Hello")
+new = hash("Hello")
 print(old == new)
-
-
-def encrypt(msg: str):
-    sha = sha256()
-    sha.update(msg.encode())
-    return binascii.hexlify(sha.digest()).decode()
-
-
-obj = encrypt("Hello")
-print(obj.__class__)
-j_obj = json.dumps(obj)
-print(j_obj)

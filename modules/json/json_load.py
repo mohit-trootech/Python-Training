@@ -7,6 +7,5 @@ import json
 
 data = {"name": "rahul", "age": 56, "cgpa": 8.6, "phone": "9999888222"}
 print(data)
-data.setdefault()
 with open("jsondumpload.json", "r") as f:
     print(json.load(f))
